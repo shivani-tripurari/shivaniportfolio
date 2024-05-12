@@ -1,0 +1,134 @@
+.work-section{
+    position: relative;
+    margin-top:17%;
+    padding: 10px;
+    height: 90vh;
+    width: 100%;
+  }
+  h1{
+    position: absolute;
+    bottom: 100%;
+    padding: 20px;
+    left: 9%;
+    font-size: 44px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  .work-info p{
+    margin: 10px;
+    font-size: 18px;
+    position: absolute;
+    top:0%;
+    left: 10%;
+    width: 57%;
+    color: #fefdff;
+  }
+  .work-info span{
+    color: #27a745;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .work-container{
+    z-index: 9999;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    height: 77%;
+    width: 82%;
+    margin-bottom: 10%;
+  }
+  .work-boxes{
+    height: 100%;
+    width: 100%;
+    transition: ease-out 3ms;
+  }
+  .parent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #090A09;
+    opacity: 1;
+    transition: ease-out 3ms;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all ease-out 5ms;
+    cursor: grab;
+    
+  }
+  .blob{
+    opacity: 0;
+    position: absolute;
+    top: -7%;
+    right: -7%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #090A09;
+    transition: ease-out 5ms;
+    
+  }
+  .parent:hover .blob{
+    opacity: 0.69;
+    transform: scale(20);
+  }
+  .parent:hover .info{
+    opacity: 1;
+  }
+  .parent:hover .image-container img{
+    opacity: 0.1;
+  }
+  .work-boxes .image-container img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.77;
+    
+  }
+  .info{
+    opacity: 0;
+    color: #090A09;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 17%;
+    left: 4%;
+    transition: ease-out 3ms;
+  }
+  .info h2{
+    font-size: 32px;
+    margin: 10px;
+    color: #fefdff;
+  }
+  .info p{
+    margin: 10px;
+    width: 50%;
+  }
+  .info h4{
+    margin: 10px;
+    font-size: 20px;
+    color: #27a745;
+  }
+  .info button{
+    margin: 10px;
+    width: 112px;
+    height: 44px;
+    background-color: #fefdff;
+    color: #191919;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 14px;
+    transition: all ease 0.43s;
+  }
+  .info button:hover{
+    border-radius: 24px;
+  }
+  .info button a{
+    text-decoration: none;
+    color: #090A09;
+    font-weight: 700;
+  }
+  
